@@ -11,9 +11,12 @@ import onlinejudge.file.dto.GroupResource;
 
 @FeignClient(name = "onlinejudge-ms-resources")
 @RequestMapping("/onlinejudge-ms-resources")
-public interface ResourseClient {
+public interface ResourceClient {
 	
 	@RequestMapping(value = "/upfiles", method=RequestMethod.POST)
 	@ResponseBody
 	public MyResponse upfile(@RequestBody GroupResource groupResource);
+	
+	@RequestMapping( value = "/downfiles", method=RequestMethod.POST)
+	public @ResponseBody GroupResource downfile(@RequestBody GroupResource groupResource);
 }
