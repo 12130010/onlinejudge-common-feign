@@ -22,6 +22,20 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-feign</artifactId>
 		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context-support</artifactId>
+		    <version>3.2.0.RELEASE</version>
+		</dependency>
+		
+		<!-- Java Mail API -->
+	    <dependency>
+		    <groupId>javax.mail</groupId>
+		    <artifactId>mail</artifactId>
+		    <version>1.4.3</version>
+	    </dependency>
+		
 		<dependency>
 			<groupId>com.nhuocquy</groupId>
 			<artifactId>onlinejudge-common-domain</artifactId>
